@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Stars</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="script.js" async></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="#" onclick="document.getElementById('id01').style.display='block'">Sign Up</a>
+  <a href="#" onclick="document.getElementById('id02').style.display='block'">Login</a>
+</div>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content animate" method="post">
+    <div class="container">
+      <h1 style="text-align:center"> Sign Up</h1>
+      <p style="text-align:center">Create an account to read stories online for free!</p>
+      <hr>
+      <label for="uname"><b>Username</b></label>
+      <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
+	  
+	  <label for="email"><b>Email</b></label>
+      <input id="email" type="text" placeholder="Enter Email Address" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input id="psw" type="password" placeholder="Enter Password" name="psw" required>
+	  
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn1">Cancel</button>
+        <button type="submit" onclick="store()" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content animate" method="post">
+    <div class="imgcontainer">
+      <img src="giphy.gif" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input id="username" type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input id="userpsw" type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button onclick="check()" type="submit">Login</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn2">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<div class="row">
+  <div class="side">
+  <div class="rowr">
+  <div class="columnr">
+    <div class="card">
+      <img src="green.jpg" alt="John Green" style="width:100%">
+      <div class="container">
+        <h2>John Green</h2>
+        <p class="titler">Author</p>
+		<p>
+           John Michael Green is an American author and YouTube content creator.
+		   He won the 2006 Printz Award for his debut novel, Looking for Alaska, and his fourth solo novel,
+		   The Fault in Our Stars, debuted at number one on The New York Times Best Seller list in January 2012.
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  
+<div class="main">
+    <h2>The Fault in Our Stars</h2>
+    <h5><i>by John Green</i></h5>
+    <p>Despite the tumor-shrinking medical miracle that has bought her a few years, Hazel has never been anything
+	but terminal, her final chapter inscribed upon diagnosis. But when a gorgeous plot twist named Augustus
+	Waters suddenly appears at Cancer Kid Support Group, Hazel's story is about to be completely rewritten.
+	</p>
+    <p>
+	Insightful, bold, irreverent, and raw,
+	The Fault in Our Stars is award-winning author John Green's most ambitious and heartbreaking work yet,
+	brilliantly exploring the funny, thrilling, and tragic business of being alive and in love.
+	</p>
+  <div class="box"><p>Total Read Count:</p>
+<div id="CounterStars">
+</div>
+</div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+</body>
+</html>

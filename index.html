@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Storyteller</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="script.js" async></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+  <h1>Digital Storyteller</h1>
+  <p>All the stories that you need!</p>
+</div>
+
+<div class="navbar">
+  <a href="index.html" class="active">Home</a>
+  <a href="#" onclick="document.getElementById('id01').style.display='block'">Sign Up</a>
+  <a href="#" onclick="document.getElementById('id02').style.display='block'">Login</a>
+</div>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content animate" method="post">
+    <div class="container">
+      <h1 style="text-align:center"> Sign Up</h1>
+      <p style="text-align:center">Create an account to read stories online for free!</p>
+      <hr>
+      <label for="uname"><b>Username</b></label>
+      <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
+	  
+	  <label for="email"><b>Email</b></label>
+      <input id="email" type="text" placeholder="Enter Email Address" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input id="psw" type="password" placeholder="Enter Password" name="psw" required>
+	  
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn1">Cancel</button>
+        <button type="submit" onclick="store()" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content animate" method="post">
+    <div class="imgcontainer">
+      <img src="giphy.gif" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input id="username" type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input id="userpsw" type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button onclick="check()" type="submit">Login</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn2">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<div class="row">
+  <div class="side">
+  <h3><i>Popular</i></h3>
+    <div class="imgrow">
+	  <div class="imgcolumn">
+	  <a target="_blank" href="wings.html">
+      <img src="wings.jpg" alt="Popular1" class="thumbnail" style="width:100%">
+      </a>
+	  </div>
+	  <div class="imgcolumn">
+	  <a target="_blank" href="carrot.html">
+      <img src="carrot.jpg" alt="Popular2" class="thumbnail" style="width:100%">
+      </a>
+	  </div>
+	  <div class="imgcolumn">
+	  <a target="_blank" href="grandma.html">
+      <img src="grandma.jpg" alt="Popular3" class="thumbnail" style="width:100%">
+      </a>
+	  </div>
+	  </div>
+	  <h3><i>Must Read</i></h3>
+	  <div class="imgrow">
+	  <div class="imgcolumn">
+	  <a target="_blank" href="prince.html">
+      <img src="prince.jpg" alt="MostRead1" class="thumbnail" style="width:100%">
+      </a>
+	  </div>
+	  <div class="imgcolumn">
+	  <a target="_blank" href="stars.html">
+      <img src="stars.jpg" alt="MostRead2" class="thumbnail" style="width:100%">
+      </a>
+	  </div>
+	  <div class="imgcolumn">
+	  <a target="_blank" href="wings.html">
+      <img src="wings.jpg" alt="MostRead3" class="thumbnail" style="width:100%">
+      </a>
+	  </div>
+	  </div>
+    </div>
+  <div class="main">
+    <h2>Library</h2>
+	<h5>Handpicked books for you</h5>
+	<div class="rowr">
+	
+  <div class="columnp">
+    <div class="card">
+	  <a target="_blank" href="carrot.html">
+      <img src="carrot.jpg" alt="carrot" style="width:100%">
+	  </a>
+      <div class="container">
+        <h3>The Case of the Missing Carrot Cake</h3>
+        <p class="titler">by Robin Newman</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="columnp">
+    <div class="card">
+	  <a target="_blank" href="prince.html">
+      <img src="prince.jpg" alt="prince" style="width:100%">
+	  </a>
+      <div class="container">
+        <h3>The Little Prince</h3>
+        <p class="titler">by Antoine de Saint-Exupéry</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="columnp">
+    <div class="card">
+	  <a target="_blank" href="stars.html">
+      <img src="stars.jpg" alt="stars" style="width:100%">
+	  </a>
+      <div class="container">
+        <h3>The Fault in Our Stars</h3>
+        <p class="titler">by Jhon Green</p>
+      </div>
+    </div>
+  </div>
+  
+ </div>
+    <br>
+    <h2>More you go</h2>
+    <h5>Explore your interest</h5>
+	<div class="rowr">
+	
+  <div class="columnp">
+    <div class="card">
+	  <a target="_blank" href="grandma.html">
+      <img src="grandma.jpg" alt="grandma" style="width:100%">
+	  </a>
+      <div class="container">
+        <h3>Grandma's Bag Of Stories</h3>
+        <p class="titler">by Sudha Murthy</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="columnp">
+    <div class="card">
+	  <a target="_blank" href="wings.html">
+      <img src="wings.jpg" alt="wings" style="width:100%">
+	  </a>
+      <div class="container">
+        <h3>The Bird with Golden Wings</h3>
+        <p class="titler">by Sudha Murthy</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="columnp">
+    <div class="card">
+	  <a target="_blank" href="carrot.html">
+      <img src="carrot.jpg" alt="carrot" style="width:100%">
+	  </a>
+      <div class="container">
+        <h3>The Case of the Missing Carrot Cake</h3>
+        <p class="titler">by Robin Newman</p>
+      </div>
+    </div>
+  </div>
+
+ </div>
+</div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Prince</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="script.js" async></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="#" onclick="document.getElementById('id01').style.display='block'">Sign Up</a>
+  <a href="#" onclick="document.getElementById('id02').style.display='block'">Login</a>
+</div>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content animate" method="post">
+    <div class="container">
+      <h1 style="text-align:center"> Sign Up</h1>
+      <p style="text-align:center">Create an account to read stories online for free!</p>
+      <hr>
+      <label for="uname"><b>Username</b></label>
+      <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
+	  
+	  <label for="email"><b>Email</b></label>
+      <input id="email" type="text" placeholder="Enter Email Address" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input id="psw" type="password" placeholder="Enter Password" name="psw" required>
+	  
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn1">Cancel</button>
+        <button type="submit" onclick="store()" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content animate" method="post">
+    <div class="imgcontainer">
+      <img src="giphy.gif" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input id="username" type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input id="userpsw" type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button onclick="check()" type="submit">Login</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn2">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<div class="row">
+  <div class="side">
+  <div class="rowr">
+  <div class="columnr">
+    <div class="card">
+      <img src="antoine.jpg" alt="Antoine de Saint-Exupéry" style="width:100%">
+      <div class="container">
+        <h2>Antoine de Saint-Exupéry</h2>
+        <p class="titler">Author</p>
+		<p>
+           Antoine de Saint-Exupéry was born in Lyons on June 29, 1900. He flew for the first time at the age of twelve,
+		   at the Ambérieu airfield, and it was then that he became determined to be a pilot.
+		   He kept that ambition even after moving to a school in Switzerland and
+		   while spending summer vacations at the family's château at Saint-Maurice-de-Rémens, in eastern France.
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+<div class="main">
+    <h2>The Little Prince</h2>
+    <h5><i>by Antoine de Saint-Exupéry</i></h5>
+    <p>Few stories are as widely read and as universally cherished by children and adults alike as The Little Prince.
+	Richard Howard's translation of the beloved classic beautifully reflects Saint-Exupéry's
+	unique and gifted style. Howard, an acclaimed poet and one of the preeminent translators of our time,
+	has excelled in bringing the English text as close as possible to the French, in language, style,
+	and most important, spirit.
+	</p>
+    <p>
+	The artwork in this edition has been restored to match in detail and in color
+	Saint-Exupéry's original artwork. Combining Richard Howard's translation with restored original art, this
+	definitive English-language edition of The Little Prince will capture the hearts of readers of all ages.
+	</p>
+    <div class="box"><p>Total Read Count:</p>
+<div id="CounterPrince">
+</div>
+</div>
+  </div>
+</div>
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+</body>
+</html>

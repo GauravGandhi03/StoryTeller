@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MissingCarrot</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="script.js" async></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="#" onclick="document.getElementById('id01').style.display='block'">Sign Up</a>
+  <a href="#" onclick="document.getElementById('id02').style.display='block'">Login</a>
+</div>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content animate" method="post">
+    <div class="container">
+      <h1 style="text-align:center"> Sign Up</h1>
+      <p style="text-align:center">Create an account to read stories online for free!</p>
+      <hr>
+      <label for="uname"><b>Username</b></label>
+      <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
+	  
+	  <label for="email"><b>Email</b></label>
+      <input id="email" type="text" placeholder="Enter Email Address" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input id="psw" type="password" placeholder="Enter Password" name="psw" required>
+	  
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn1">Cancel</button>
+        <button type="submit" onclick="store()" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content animate" method="post">
+    <div class="imgcontainer">
+      <img src="giphy.gif" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input id="username" type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input id="userpsw" type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button onclick="check()" type="submit">Login</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn2">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<div class="row">
+  <div class="side">
+  <div class="rowr">
+  <div class="columnr">
+    <div class="card">
+      <img src="robin.jpg" alt="Robin Newman" style="width:100%">
+      <div class="container">
+        <h2>Robin Newman</h2>
+        <p class="titler">Author</p>
+		<p>
+           Raised in New York and Paris, Robin's been a practicing attorney and legal editor,
+		   but she now prefers to write about witches, mice, pigs and peacocks.
+		   She's a member of the Society of Children's
+		   Book Writers and Illustrators, National Writing Project's Writers Council,
+		   and the Bank Street Writers Lab.
+		   She lives with her husband, son, goldfish, French Bulldog,
+		   and two English Cocker Spaniels.
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+<div class="main">
+    <h2>The Case of the Missing Carrot Cake</h2>
+    <h5><i>by Robin Newman</i></h5>
+    <p>When food goes missing on Ed's farm,
+	   Detectives Wilcox and Griswold do what it takes to track down the thieves.
+	   In this case, Miss Rabbit's carrot cake has disappeared.
+	   Has it been stolen? Or eaten? Or both? Who dunnit?
+	</p>
+    <p>
+	   Readers ready for chapter books will solve
+	   the crime and then be surprised by the twist at the end.
+	   Here's hoping for more hard-boiled detecting from Wilcox and Griswold!
+	</p>
+    <div class="box"><p>Total Read Count:</p>
+<div id="CounterCarrot">
+</div>
+</div>
+  </div>
+</div>
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+</body>
+</html>

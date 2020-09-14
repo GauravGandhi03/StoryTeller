@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>GoldenWings</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="script.js" async></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="#" onclick="document.getElementById('id01').style.display='block'">Sign Up</a>
+  <a href="#" onclick="document.getElementById('id02').style.display='block'">Login</a>
+</div>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content animate" method="post">
+    <div class="container">
+      <h1 style="text-align:center"> Sign Up</h1>
+      <p style="text-align:center">Create an account to read stories online for free!</p>
+      <hr>
+      <label for="uname"><b>Username</b></label>
+      <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
+	  
+	  <label for="email"><b>Email</b></label>
+      <input id="email" type="text" placeholder="Enter Email Address" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input id="psw" type="password" placeholder="Enter Password" name="psw" required>
+	  
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn1">Cancel</button>
+        <button type="submit" onclick="store()" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content animate" method="post">
+    <div class="imgcontainer">
+      <img src="giphy.gif" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input id="username" type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input id="userpsw" type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button onclick="check()" type="submit">Login</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn2">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<div class="row">
+  <div class="side">
+  <div class="rowr">
+  <div class="columnr">
+    <div class="card">
+      <img src="sudha.jpg" alt="Sudha Murthy" style="width:100%">
+      <div class="container">
+        <h2>Sudha Murthy</h2>
+        <p class="titler">Author</p>
+		<p>
+           Sudha Murthy is an Indian engineering teacher, Kannada, Marathi and English author as well as a Social worker.
+           She is also the Chairperson of the Infosys Foundation.
+           She is the wife of co-founder of Infosys, N. R. Narayana Murthy.
+           Sudha Murthy began her professional career in computer science and engineering.
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+<div class="main">
+    <h2>The Bird with Golden Wings</h2>
+    <h5><i>by Sudha Murthy</i></h5>
+    <p>What would you do if a bird with golden wings alighted on your terrace and offered you fabulous riches?</p>
+    <p>
+	   A poor little girl is rewarded with lovely gifts when she takes pity on a hungry bird and feeds it all the rice she has,
+	   but what happens when the girl’s greedy, nosy neighbour hears the story and tries to get bigger and better gifts for herself?
+	   Why did the once sweet sea water turn salty? How did it happen that the learned teacher forgot all his lessons and had to be helped out by the school cook?
+	   And what did the king do so that the people of his kingdom did not come to know that he has horrible donkey ears hidden under his turban?
+	</p>
+	<p>
+	   Sudha Murthy’s new, enchanting collection of stories bubbles over with fun.
+	   Delightful colour illustrations bring to life tales of magical creatures, princesses and kings,
+	   ordinary witty men and women in a book that will bring hours of joy to readers young and old.
+	</p>
+    <div class="box"><p>Total Read Count:</p>
+<div id="CounterWings">
+</div>
+</div>
+  </div>
+</div>
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+</body>
+</html>
